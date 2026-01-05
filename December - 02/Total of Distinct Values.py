@@ -1,0 +1,8 @@
+n = int(input())
+width = len(bin(n)[2:])   
+for i in range(1, n + 1):
+    dec = str(i).rjust(width)
+    octal = oct(i)[2:].rjust(width)
+    hexadecimal = hex(i)[2:].upper().rjust(width)
+    binary = bin(i)[2:].rjust(width)
+    print(dec, octal, hexadecimal, binary)
